@@ -1,0 +1,684 @@
+body {
+
+  font-family: "proxima-nova";
+  font-weight: 100;
+  font-size: 1em !important;
+  position: relative;
+
+}
+
+h2 {
+
+  margin: 0;
+
+}
+
+/*navbar*/
+header .navbar {
+
+  border-radius: 0;
+  border: none;
+  font-family: "freight-sans-pro";
+  font-weight: 200;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  font-kerning: normal;
+  letter-spacing: 3px;
+  background: #eeeeee;
+
+}
+
+header .navbar-header {
+
+  border: none;
+
+}
+
+
+header .navbar-default .navbar-nav a {
+
+  color: #aa5450;
+
+}
+
+header .navbar-default .navbar-nav .active a {
+
+  color: #aa5450;
+  background: transparent !important;
+  border-bottom: 1px solid #7b3d3d;
+  text-shadow: none;
+  padding-bottom: 2px;
+
+}
+
+header .navbar-default .navbar-nav .active a:hover {
+
+  color: #7b3d3d;
+  text-shadow: none;
+
+}
+
+/*logo*/
+
+header .navbar-brand {
+
+  background-image: url(../images/logo.png);
+  background-repeat: no-repeat;
+  background-position: 25px center;
+
+
+}
+
+header .navbar-brand h5 {
+
+  color: black;
+  font-size: 1.4em;
+  font-weight: 100;
+  padding-left: 55px;
+  margin-top: auto;
+  margin-bottom: auto;
+
+
+}
+
+/* burger icon */
+
+.navbar-toggle {
+
+  border: none;
+  background: transparent !important;
+
+}
+
+.navbar-toggle:hover {
+
+  background: transparent !important;
+
+}
+.navbar-toggle .icon-bar {
+
+  width: 22px;
+  transition: all 0.2s;
+
+}
+
+.navbar-toggle .top-bar {
+
+  transform: rotate(45deg);
+  transform-origin: 10% 10%;
+
+}
+
+.navbar-toggle .middle-bar {
+
+  opacity: 0;
+
+}
+
+.navbar-toggle .bottom-bar {
+
+  transform: rotate(-45deg);
+  transform-origin: 10% 90%;
+
+}
+
+.navbar-toggle.collapsed .top-bar {
+
+  transform: rotate(0);
+
+}
+
+.navbar-toggle.collapsed .middle-bar {
+
+  opacity: 1;
+
+}
+
+.navbar-toggle.collapsed .bottom-bar {
+
+  transform: rotate(0);
+
+}
+
+
+#hero {
+
+  position: relative;
+  background-image: url(../images/hero.jpg);
+  height: 100vh;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+#pointer-wrapper {
+
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+
+
+
+}
+
+.pointer {
+
+  cursor: pointer;
+  width: 20px;
+  height: 40px;
+  border: 1px solid;
+  border-radius: 10px;
+  color: #c0c1c2;
+  text-align: center;
+  padding-top: 12px;
+
+
+}
+
+.icon-chevron-down:before {
+
+  content: "\e900";
+  color: #c0c1c2;
+  font-size: 1.4em;
+
+}
+
+div h1 {
+
+  font-size: 4em;
+  color: white;
+  margin: 0;
+  opacity: 0.7;
+
+}
+
+
+h2 {
+
+  font-size: 3.5em !important;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold !important;
+  color: #4A4A4A;
+  padding-top: 70px;
+  padding-bottom: 70px;
+
+
+}
+
+/*services section*/
+
+#services h2 {
+
+  margin-top: 0;
+
+}
+
+#services {
+
+  height: 1085px;
+  background-color: #F4F5F7;
+
+}
+
+@media screen and (max-width: 1999px) {
+
+  #services {
+    height: 1125px;
+
+  }
+}
+
+
+@media screen and (max-width: 990px) {
+
+  #services {
+    height: 1175px;
+
+  }
+}
+
+@media screen and (max-width: 767px) {
+
+  #services {
+    height: 1790px;
+
+  }
+}
+
+@media screen and (max-width: 597px) {
+
+  #services {
+    height: 1800px;
+
+  }
+}
+
+.icon {
+
+  width: 140px;
+  height: 140px;
+
+}
+
+.row-centered {
+
+  text-align: center;
+
+}
+
+.col-centered {
+
+  /*display: inline-block;*/
+  margin-bottom: 75px;
+
+
+
+}
+
+.content h3 {
+
+  font-size: 3em;
+  font-weight: 600;
+}
+
+p {
+
+  font-size: 2em;
+  padding: 20px 40px 20px 40px;
+  width: 350;
+  margin: 0 auto 0 auto;
+  line-height: 1.6em;
+
+}
+
+.cube-wrapper {
+
+  -webkit-perspective: 1000px;
+  -moz-perspective: 1000px;
+  perspective: 1000px;
+  width: 200px;
+  height: 68px;
+  margin: 0 auto !important;
+
+}
+
+/* Container box to set the sides relative to */
+
+.cube {
+
+  width: 200px;
+  height: 68px;
+  cursor: pointer;
+  -webkit-transition: all 250ms ease;
+  -moz-transition: all 250ms ease;
+  -o-transition: all 250ms ease;
+  transition: all 250ms ease;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+
+}
+
+/* The two faces of the cube */
+
+.default-state,
+.active-state {
+
+  height: 68px;
+
+}
+
+/* Position the faces */
+
+.default-state {
+
+  -webkit-transform: translateZ(32px);
+  -moz-transform: translateZ(32px);
+  -o-transform: translateZ(32px);
+  -ms-transform: translateZ(32px);
+  transform: translateZ(32px);
+
+}
+
+.flip-to-top .active-state {
+
+  -webkit-transform: rotateX(90deg) translateZ(101px);
+  -moz-transform: rotateX(90deg) translateZ(101px);
+  -o-transform: rotateX(90deg) translateZ(101px);
+  -ms-transform: rotateX(90deg) translateZ(101px);
+  transform: rotateX(90deg) translateZ(101px);
+
+}
+
+/* Rotate the cube */
+
+.cube.flip-to-top:hover {
+
+  -webkit-transform: rotateX(-89deg);
+  -moz-transform: rotateX(-89deg);
+  -o-transform: rotateX(-89deg);
+  -ms-transform: rotateX(-89deg);
+  transform: rotateX(-89deg);
+
+}
+
+/* END CORE CSS */
+/* Demo styling */
+
+.cube-wrapper {
+
+  font-family: "freight-sans-pro";
+  font-weight: 200;
+  margin: 70px;
+  background: #f1f1f1;
+
+}
+
+.cube {
+
+  text-align: center;
+  margin: 0 auto;
+
+}
+
+.default-state,
+.active-state {
+
+  background: #aa5450;
+  font-size: 2em;
+  text-transform: uppercase;
+  color: #fff;
+  line-height: 68px;
+  -webkit-transition: background 250ms ease;
+  -moz-transition: background 250ms ease;
+  -o-transition: background 250ms ease;
+  transition: background 250ms ease;
+
+}
+
+.cube:active .default-state {
+
+  background: #7b3d3d;
+}
+
+.active-state {
+
+  background: #7b3d3d;
+
+}
+
+#flipto {
+
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 20px;
+  color: #ccc;
+
+}
+
+/*getting things done section*/
+.orchids {
+
+  margin-top: -20%;
+
+}
+
+@media (min-width: 1780px) {
+
+  .orchids {
+
+    margin-left: -250px;
+
+  }
+
+}
+
+@media (max-width: 1200px) {
+
+  .orchids {
+
+    margin-top: 50px;
+
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  .orchids {
+
+    margin-top: 50px;
+    max-width: 75%;
+    height: auto;
+
+  }
+
+}
+
+.sales-pitch p {
+
+  text-align: left;
+  font-weight: 100;
+
+}
+
+.txt-btn {
+
+  width: 200px;
+  height: 68px;
+  background: #aa5450;
+  font-size: 2em;
+  text-transform: uppercase;
+  color: #fff;
+  margin: 0 auto 0 auto;
+
+
+}
+
+.txt-btn span {
+
+  display: block;
+  margin-top: 20px;
+  text-decoration: none;
+  padding-top: 20px;
+  cursor: pointer;
+
+
+}
+
+/*particles*/
+
+#particles-js {
+
+  width: 100%;
+  height: 350px;
+  background-color: #723939;
+
+}
+
+//footer
+
+footer {
+
+  color: #c0c1c2;
+  background-color: #313131;
+  font-family: "freight-sans-pro";
+  font-weight: 400;
+  font-size: 1em;
+
+}
+
+footer .container {
+
+  overflow: hidden;
+  padding-bottom: 40px;
+  padding-top: 40px;
+
+}
+
+
+.brand-name {
+
+
+  background-image: url(../images/logoW.png);
+  background-repeat: no-repeat;
+  position: relative;
+  top: 50px;
+  left: 43px;
+  height: 80px;
+
+}
+
+.brand-name h5 {
+
+  margin: 0;
+  font-size: 3em;
+  font-weight: 300;
+  padding-left: 50px;
+  padding-top: 5px;
+  text-align: left;
+
+}
+
+.address {
+
+  text-align: left;
+
+}
+
+.icon-linkedin {
+
+  text-decoration: none;
+  font-size: 25px;
+
+}
+
+.icon-linkedin:hover {
+
+  cursor: pointer;
+  color: black;
+
+}
+
+
+.icon-facebook {
+
+  font-size: 25px;
+  padding-left: 5px;
+
+}
+
+.icon-facebook:hover {
+
+  cursor: pointer;
+  color: black;
+
+}
+
+
+#social-icons {
+
+  text-align: left;
+  margin-top: 35px;
+  margin-left: 20px
+
+}
+
+.back-to-top {
+
+  position: relative;
+
+}
+
+.back-to-top:hover {
+
+  color: #000000;
+  cursor: pointer;
+
+}
+
+.up-slider {
+
+  position: absolute;
+  right: 80px;
+  top: -120px;
+  border: 2px solid;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  padding-left: 11px;
+  padding-top: 10px;
+
+
+}
+
+.icon-chevron-up:before {
+
+  content: "\e901";
+  font-size: 25px;
+
+
+}
+
+#copyright {
+
+  position: absolute;
+  bottom: 0;
+  right: 50px;
+  font-size: 0.7em;
+  font-weight: 100;
+}
+
+@media screen and (max-width: 993px) {
+
+  .info {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  #social-icons {
+
+    margin-left: -90px;
+    margin-top: 0;
+  }
+
+  footer .container {
+
+    position: relative;
+  }
+
+  .brand-name {
+
+    position: relative; /*zrihti layout!!!!*/
+    left: 39%;
+    top: -30%;
+  }
+
+  .address {
+
+    margin-top: -30px;
+
+  }
+
+
+}
+
+
+
+
