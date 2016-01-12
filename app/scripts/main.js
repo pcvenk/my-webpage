@@ -22,7 +22,14 @@ $(document).ready(function() {
       scrollTop: 0}, scrollDuration);
   })
 
+  //particles
+  particlesJS();
+
+
 });
 
-//particles
-particlesJS();
+
+
+
+
+

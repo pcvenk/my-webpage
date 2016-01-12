@@ -201,24 +201,21 @@ div h1 {
 }
 
 
-h2 {
-
-  font-size: 3.5em !important;
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: bold !important;
-  color: #4A4A4A;
-  padding-top: 70px;
-  padding-bottom: 70px;
-
-
-}
 
 /*services section*/
 
 #services h2 {
 
+
   margin-top: 0;
+  font-size: 3.5em;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 800;
+  color: #4A4A4A;
+  padding-top: 70px;
+  padding-bottom: 70px;
+
 
 }
 
@@ -232,6 +229,7 @@ h2 {
 @media screen and (max-width: 1999px) {
 
   #services {
+
     height: 1125px;
 
   }
@@ -241,6 +239,7 @@ h2 {
 @media screen and (max-width: 990px) {
 
   #services {
+
     height: 1175px;
 
   }
@@ -249,6 +248,7 @@ h2 {
 @media screen and (max-width: 767px) {
 
   #services {
+
     height: 1790px;
 
   }
@@ -257,10 +257,49 @@ h2 {
 @media screen and (max-width: 597px) {
 
   #services {
+
     height: 1800px;
 
   }
 }
+
+@media screen and (max-width: 564px) {
+
+  #services {
+
+    height: 1830px;
+
+  }
+}
+
+@media screen and (max-width: 508px) {
+
+  #services {
+
+    height: 1860px;
+
+  }
+}
+@media screen and (max-width: 442px) {
+
+  #services {
+
+    height: 1930px;
+
+  }
+}
+
+
+@media screen and (max-width: 400px) {
+
+  #services {
+
+    height: 1960px;
+
+  }
+}
+
+
 
 .icon {
 
@@ -283,6 +322,7 @@ h2 {
 
 
 }
+
 
 .content h3 {
 
@@ -435,6 +475,16 @@ p {
 
 }
 
+@media (max-width: 1199px) {
+
+  .orchid {
+
+    margin-bottom: 0;
+  }
+
+}
+
+
 @media (min-width: 1780px) {
 
   .orchids {
@@ -467,6 +517,21 @@ p {
 
 }
 
+.sales-pitch h2 {
+
+  font-family: "freight-sans-pro";
+  font-size: 3.5em;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 800;
+  color: #4A4A4A;
+  padding-top: 70px;
+  padding-bottom: 70px;
+
+}
+
 .sales-pitch p {
 
   text-align: left;
@@ -474,10 +539,11 @@ p {
 
 }
 
-.txt-btn {
+//btn-animation
+.hvr-ripple-out {
 
-  width: 200px;
-  height: 68px;
+  width: 194px;
+  height: 60px;
   background: #aa5450;
   font-size: 2em;
   text-transform: uppercase;
@@ -487,15 +553,61 @@ p {
 
 }
 
-.txt-btn span {
+.hvr-ripple-out span {
 
   display: block;
-  margin-top: 20px;
-  text-decoration: none;
-  padding-top: 20px;
+  font-family: "freight-sans-pro";
+  font-weight: 200;
+  padding-top: 15px;
   cursor: pointer;
 
+}
 
+@-webkit-keyframes hvr-ripple-out {
+  100% {
+    top: -12px;
+    right: -12px;
+    bottom: -12px;
+    left: -12px;
+    opacity: 0;
+  }
+}
+
+@keyframes hvr-ripple-out {
+  100% {
+    top: -12px;
+    right: -12px;
+    bottom: -12px;
+    left: -12px;
+    opacity: 0;
+  }
+}
+
+.hvr-ripple-out {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+}
+.hvr-ripple-out:before {
+  content: '';
+  position: absolute;
+  border: #aa5450 solid 6px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+}
+.hvr-ripple-out:hover:before, .hvr-ripple-out:focus:before, .hvr-ripple-out:active:before {
+  -webkit-animation-name: hvr-ripple-out;
+  animation-name: hvr-ripple-out;
 }
 
 /*particles*/
@@ -612,7 +724,7 @@ footer .container {
 .up-slider {
 
   position: absolute;
-  right: 80px;
+  right: 65px;
   top: -120px;
   border: 2px solid;
   width: 50px;
@@ -635,27 +747,27 @@ footer .container {
 #copyright {
 
   position: absolute;
-  bottom: 0;
-  right: 50px;
+  right: 10px;
+  bottom: 0px;
   font-size: 0.7em;
   font-weight: 100;
 }
 
-@media screen and (max-width: 993px) {
+@media screen and (max-width: 992px) {
 
-  .info {
+  .address {
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
+    margin-top: 27px;
+    height: 100px;
 
   }
 
   #social-icons {
 
-    margin-left: -90px;
-    margin-top: 0;
+    margin-top: -10px;
+    text-align: center;
+
   }
 
   footer .container {
@@ -665,20 +777,28 @@ footer .container {
 
   .brand-name {
 
-    position: relative; /*zrihti layout!!!!*/
-    left: 39%;
-    top: -30%;
-  }
-
-  .address {
-
-    margin-top: -30px;
+    position: absolute;
+    left: 40%;
+    top: 0px;
 
   }
-
 
 }
 
+@media screen and (max-width: 500px) {
 
+  #copyright {
+
+    right:-25px;
+
+  }
+
+  .up-slider {
+
+    right:25px;
+
+  }
+
+}
 
 
