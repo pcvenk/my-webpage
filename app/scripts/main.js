@@ -1,4 +1,3 @@
-$(document).ready(function() {
 
   //hero scroll
   function smoothScrollTo(services) {
@@ -23,12 +22,8 @@ $(document).ready(function() {
   })
 
   //particles
+
   particlesJS();
-
-
-});
-
-
 
 
 

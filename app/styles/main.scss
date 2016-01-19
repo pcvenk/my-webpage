@@ -1,3 +1,7 @@
+@import url(https://fonts.googleapis.com/css?family=Cabin+Sketch:400,700);
+@import url(https://fonts.googleapis.com/css?family=Catamaran:400,900);
+@import url(https://fonts.googleapis.com/css?family=Abel);
+
 body {
 
   font-family: "proxima-nova";
@@ -216,7 +220,6 @@ div h1 {
   padding-top: 70px;
   padding-bottom: 70px;
 
-
 }
 
 #services {
@@ -318,8 +321,6 @@ div h1 {
 
   /*display: inline-block;*/
   margin-bottom: 75px;
-
-
 
 }
 
@@ -521,11 +522,11 @@ p {
 
   font-family: "freight-sans-pro";
   font-size: 3.5em;
+  font-weight: 800;
   margin-top: 0;
   margin-bottom: 0;
   text-align: center;
   text-transform: uppercase;
-  font-weight: 800;
   color: #4A4A4A;
   padding-top: 70px;
   padding-bottom: 70px;
@@ -536,6 +537,7 @@ p {
 
   text-align: left;
   font-weight: 100;
+  margin-bottom: 50px;
 
 }
 
@@ -549,7 +551,6 @@ p {
   text-transform: uppercase;
   color: #fff;
   margin: 0 auto 0 auto;
-
 
 }
 
@@ -751,6 +752,7 @@ footer .container {
   bottom: 0px;
   font-size: 0.7em;
   font-weight: 100;
+
 }
 
 @media screen and (max-width: 992px) {
@@ -789,16 +791,291 @@ footer .container {
 
   #copyright {
 
-    right:-25px;
+    right: 0px;
+
 
   }
 
   .up-slider {
 
-    right:25px;
+    right: 25px;
+
+  }
+
+  .brand-name {
+
+    position: absolute;
+    left: 33%;
+    top: 0px;
 
   }
 
 }
 
 
+//About page
+
+
+
+.behind-the-scene h2 {
+
+  margin-top: 30px;
+  text-align: center;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #4A4A4A;;
+  padding-top: 70px;
+  padding-bottom: 70px;
+
+}
+
+.behind-the-scene {
+
+  padding-bottom: 40px;
+
+}
+
+.myself {
+
+  margin-bottom: 50px;
+
+}
+
+.low-poly {
+
+  max-width: 80%;
+  height:auto;
+
+}
+
+.presentation {
+
+  padding-top: 0;
+  margin-bottom: 40px;
+
+}
+
+//creative styling
+
+
+.quote-part {
+
+  background-color: #595959;
+  color: #fff;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.container-quote {
+
+  width: 590px;
+  padding-top: 0px;
+
+
+}
+
+.text {
+
+  width: 550px;
+  font: 2.65em "Abel";
+  letter-spacing: .075em;
+  float: left;
+  padding: 45px 0 30px 25px;
+  border-top: 2px dotted #000000;
+  border-bottom: 2px dotted #000000;
+  -webkit-transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
+
+}
+
+.text:first-letter {
+  font-size: 3em;
+  text-transform: lowercase;
+  float: left;
+  line-height: .52em;
+  margin-top: -25px;
+  position: relative;
+  z-index: 1;
+}
+
+.text:first-line {
+
+  font: 2.6em "Cabin Sketch";
+  color: #fff79e;
+
+}
+
+.text strong:first-child {
+
+  margin-left: 10px;
+  letter-spacing: 0;
+
+}
+
+.text strong:last-child {
+
+  font: 2.7em "Catamaran";
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0;
+
+}
+
+.text em {
+
+  border-bottom: 2px dotted #000000;
+  margin-left: 135px;
+
+}
+
+.text + b {
+
+  float: right;
+  margin-top: 10px;
+  font: 1.6em CallunaRegular;
+  letter-spacing: .15em;
+
+}
+
+.text + b:first-letter {
+
+  color: #fff79e;
+  font-size: 1.3em;
+  font-style: italic;
+  letter-spacing: .25em;
+
+}
+
+@media screen and (max-width: 700px) {
+
+  .container-quote {
+
+    width: 380px;
+    padding-top: 0px;
+
+  }
+
+  .text {
+
+    width: 350px;
+    font: 1.9em "Abel";
+    letter-spacing: .075em;
+    float: left;
+    padding: 45px 0 30px 15px;
+    border-top: 2px dotted #000000;
+    border-bottom: 2px dotted #000000;
+    -webkit-transform: rotate(-3deg);
+    -moz-transform: rotate(-3deg);
+
+  }
+
+  .text:first-letter {
+    font-size: 2.3em;
+    text-transform: lowercase;
+    float: left;
+    line-height: .52em;
+    margin-top: -15px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .text:first-line {
+
+    font: 2.3em "Cabin Sketch";
+    color: #fff79e;
+
+  }
+
+  .text strong:first-child {
+
+    margin-left: 5px;
+    letter-spacing: 0;
+
+  }
+
+  .text strong:last-child {
+
+    font: 2.4em "Catamaran";
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0;
+
+  }
+
+  .text em {
+
+    border-bottom: 2px dotted #000000;
+    margin-left: 70px;
+
+  }
+
+  .text + b {
+
+    float: right;
+    margin-top: 10px;
+    font: 1.6em CallunaRegular;
+    letter-spacing: .15em;
+
+  }
+
+  .text + b:first-letter {
+
+    color: #fff79e;
+    font-size: 1.3em;
+    font-style: italic;
+    letter-spacing: .25em;
+
+  }
+
+
+
+}
+
+
+.list h4 {
+
+  font-family: "freight-sans-pro";
+  font-size: 2.5em;
+  text-transform: uppercase;
+  font-weight: 700;
+  position: relative;
+  margin: 15px auto 30px auto;
+
+}
+
+
+
+//icons
+
+.skill-set {
+
+  padding: 0 auto 0 auto;
+  width: 100px;
+  height: 100px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+}
+
+.icon-content {
+
+  text-align: center;
+
+}
+
+.icon-skills {
+
+  margin-bottom: 70px;
+
+}
+
+.container .hvr-ripple-out {
+
+  margin-bottom: 60px;
+
+}
